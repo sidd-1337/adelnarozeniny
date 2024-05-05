@@ -4,7 +4,7 @@ import BirthdayPage from './BirthdayPage';
 function App() {
   return (
       <div>
-        <BirthdayPage/>
+        <BirthdayPage />
       </div>
   );
 }
