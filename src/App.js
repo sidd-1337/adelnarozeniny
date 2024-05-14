@@ -10,7 +10,7 @@ const App = () => {
         <AuthProvider>
             <Router>
                 <Routes>
-                    <Route path="/" element={<MainPage />} />
+                    <Route path="/adelnarozeniny" element={<MainPage />} />
                     <Route path="/birthday-page" element={<BirthdayPage />} />
                 </Routes>
             </Router>
