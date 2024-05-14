@@ -8,7 +8,7 @@ import Confetti from 'react-confetti';
 import './BirthdayPage.css';
 
 const BalloonGame = ({ onComplete }) => {
-    const [balloons, setBalloons] = useState(Array.from({ length: 1 }, (_, i) => ({ id: i, popped: false })));
+    const [balloons, setBalloons] = useState(Array.from({ length: 19 }, (_, i) => ({ id: i, popped: false })));
 
     const popBalloon = (id) => {
         setBalloons(balloons.map(balloon => balloon.id === id ? { ...balloon, popped: true } : balloon));
