@@ -25,7 +25,7 @@ const BalloonGame = ({ onComplete }) => {
     return (
         <Container className="balloon-game" maxWidth="xs">
             <Typography variant="h5" style={{ textAlign: 'center', marginBottom: '20px', color: '#7e3b3b' }}>
-                <h5 className="random-font"> Popni všech svých 19 narozeninových balónků</h5>
+                <h4 className="random-font"> Popni všech svých 19 narozeninových balónků</h4>
             </Typography>
             <Box className="balloon-container">
                 {balloons.map(balloon => (

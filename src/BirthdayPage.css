@@ -3,12 +3,33 @@ body {
     position: relative;
 }
 
+@keyframes move1 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(20px, 20px); }
+}
+
+@keyframes move2 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-20px, -20px); }
+}
+
+@keyframes move3 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(20px, -20px); }
+}
+
+@keyframes move4 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-20px, 20px); }
+}
+
 .flower {
     height: 70px;
     width: 70px;
     padding: 5px;
     cursor: pointer;
     transition: transform 0.2s ease;
+    animation: moveAround 10s infinite ease-in-out;
 }
 
 .flower:hover {
@@ -98,8 +119,8 @@ body {
 }
 
 .balloon {
-    width: 70px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin: 10px;
     display: flex;
     justify-content: center;
