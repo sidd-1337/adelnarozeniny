@@ -1,0 +1,117 @@
+.floating-hearts {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background: #d59595;
+    transform: rotate(45deg);
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f5a4a4;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -10px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-300px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* Adjust heart position and animation timing */
+.heart:nth-child(2) {
+    left: 10%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(3) {
+    left: 20%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(4) {
+    left: 30%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.heart:nth-child(5) {
+    left: 40%;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(6) {
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: 5s;
+}
+
+.heart:nth-child(7) {
+    left: 60%;
+    animation-duration: 6s;
+    animation-delay: 6s;
+}
+
+.heart:nth-child(8) {
+    left: 70%;
+    animation-duration: 7s;
+    animation-delay: 7s;
+}
+
+.heart:nth-child(9) {
+    left: 80%;
+    animation-duration: 8s;
+    animation-delay: 8s;
+}
+
+.heart:nth-child(10) {
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 9s;
+}
