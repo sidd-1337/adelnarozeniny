@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/adelnarozeniny/static/css/main.5d985c64.css",
+    "main.js": "/adelnarozeniny/static/js/main.2cbac141.js",
+    "static/js/453.39969610.chunk.js": "/adelnarozeniny/static/js/453.39969610.chunk.js",
+    "index.html": "/adelnarozeniny/index.html",
+    "main.5d985c64.css.map": "/adelnarozeniny/static/css/main.5d985c64.css.map",
+    "main.2cbac141.js.map": "/adelnarozeniny/static/js/main.2cbac141.js.map",
+    "453.39969610.chunk.js.map": "/adelnarozeniny/static/js/453.39969610.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d985c64.css",
+    "static/js/main.2cbac141.js"
+  ]
+}
