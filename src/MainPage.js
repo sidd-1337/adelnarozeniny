@@ -65,7 +65,7 @@ const MainPage = () => {
         setGameComplete(true);
     };
 
-    const passwordHash = '$2a$12$Z9IXx9KeUeQ11Ww.8PTyXuPNBLQGCKEL/xeU3bgFzNsubwWYuUyB2';
+    const passwordHash = '$2a$12$YKjfPQzFnUWxVA13Ecp.M.xZDiOfk3KL9uSYozKNCoMTtouCMwd9y';
 
     const checkPassword = () => {
         if (bcrypt.compareSync(password, passwordHash)) {

@@ -24,6 +24,7 @@ import img16 from './flowers/img16.png';
 import img17 from './flowers/img17.png';
 import img18 from './flowers/img18.png';
 import img19 from './flowers/img19.png';
+import img20 from './flowers/cipher.png';
 import FlowerMessage1 from './FlowerMessages/FlowerMessage1';
 import FlowerMessage2 from './FlowerMessages/FlowerMessage2';
 import FlowerMessage3 from './FlowerMessages/FlowerMessage3';
@@ -115,6 +116,7 @@ const BirthdayPage = () => {
 
     const [showMessage, setShowMessage] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
+    const [showCipher, setShowCipher] = useState(false);
     const [password, setPassword] = useState('');
     const [passwordEntered, setPasswordEntered] = useState(false);
     const [currentMessage, setCurrentMessage] = useState('');
@@ -137,7 +139,7 @@ const BirthdayPage = () => {
     };
 
     const handleHelpClick = () => {
-        modalRef.current.open();
+        setShowCipher(true);
     };
 
     const handleSubmit = () => {
@@ -158,7 +160,8 @@ const BirthdayPage = () => {
     const handleClose = () => {
         setShowMessage(false);
         setShowPopup(false);
-        setPassword('');  // Clear the password field
+        setPassword('');
+        setShowCipher(false);
     };
 
     return (
@@ -261,8 +264,64 @@ const BirthdayPage = () => {
                         </Modal>
                     )}
                 </Grid>
-
             </Grid>
+            {showCipher && (
+                <div className="cipher">
+                    <Modal open={showCipher} className="cipher" onClose={handleClose}>
+                        <Paper elevation={3} style={{
+                            padding: '50px',
+                            textAlign: 'left',
+                            position: 'absolute',
+                            top:'50px',
+                            borderRadius: '20px',
+                            backgroundColor: 'rgb(253 215 203)',
+                            color: 'rgb(178 108 108)',
+                            border: '4px solid #f7b7a3',
+                            overflow: 'auto'
+                        }}>
+                            <h3 style={{ marginTop: '-25px' }}>Jak přijít na heslo?</h3>
+                            <div >Pro každou květinku je to stejné. Jak jsem již psal, využiješ
+                                své heslo a Autokey šifru. <br/>
+                                Šifra spočívá v tom, že určitá písmena a čísla mají své indexy. Vezmeš své heslo, které si
+                                vyluštila a přidáš k němu vždy prvních 6 písmen po rozkliknutí kytky.<br/>
+                                Udělal jsem ti to trochu jednodušší v tom, že je to vždy přesně 6 písmen, takže zde už jen
+                                sčítáš mezi sebou tyto 2 texty.<br/>
+                                Je to vždycky bez diakritiky a bez mezer. Tudíž například, kdyby věta byla: "Mám tě rád",
+                                tak by to bylo "MAMTER" (Toto se označuje jako otevřený text).<br/>
+                                Poté už jen dle tabulky níže najdeš indexy.<br/>
+                                M šifrované I:<br/>
+                                M (12) + I (8) = 20 -> U<br/>
+                                A šifrované L:<br/>
+                                A (0) + L (11) = 11 -> L<br/>
+                                M šifrované Y:<br/>
+                                M (12) + Y (24) = 36 = 0 -> A<br/>
+                                T šifrované 3:<br/>
+                                T (19) + 3 (29) = 48 = 12 -> M<br/>
+                                E šifrované 2:<br/>
+                                E (4) + 2 (28) = 32 -> 6<br/>
+                                R šifrované C:<br/>
+                                R (17) + C (2) = 19 -> T<br/>
+                                Pokud ti vyjde výsledek větší než jsou indexy, tak poté zase jedeš odznova (jinak je to jako
+                                výpočetní operace modulo).<br/>
+                                Přeji ti tedy hodně štěstí)) doufám, že jsem to vysvětlil dobře a půjde ti to.<br/>
+                                Kdyby ne, stále připomínám, že jsou občas věci, které nejsou na první pohled moc
+                                vidět:).<br/>
+                                Zde je tabulka: <br/>
+                                <img src={img20} alt="cipher" style={{width: '500px'}}/>
+
+                            </div>
+                            <Button
+                                variant="contained"
+                                style={{ backgroundColor: '#f7b7a3', color: '#7e3b3b', borderRadius: '10px', marginTop: '10px',marginBottom: '-25px'  }}
+                                onClick={handleClose}
+                                className="submit-button"
+                            >
+                                Close
+                            </Button>
+                        </Paper>
+                    </Modal>
+                </div>
+            )}
             <ModalAlert
                 ref={modalRef}
                 title="Špatné heslo:/"
