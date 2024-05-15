@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/adelnarozeniny/static/css/main.59df0a1b.css",
-    "main.js": "/adelnarozeniny/static/js/main.7f764aca.js",
+    "main.js": "/adelnarozeniny/static/js/main.cba4da1a.js",
     "static/js/453.39969610.chunk.js": "/adelnarozeniny/static/js/453.39969610.chunk.js",
     "static/media/cipher.png": "/adelnarozeniny/static/media/cipher.e5c9bd7b3293123e7232.png",
     "index.html": "/adelnarozeniny/index.html",
     "main.59df0a1b.css.map": "/adelnarozeniny/static/css/main.59df0a1b.css.map",
-    "main.7f764aca.js.map": "/adelnarozeniny/static/js/main.7f764aca.js.map",
+    "main.cba4da1a.js.map": "/adelnarozeniny/static/js/main.cba4da1a.js.map",
     "453.39969610.chunk.js.map": "/adelnarozeniny/static/js/453.39969610.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59df0a1b.css",
-    "static/js/main.7f764aca.js"
+    "static/js/main.cba4da1a.js"
   ]
 }
