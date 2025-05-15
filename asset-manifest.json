@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/adelnarozeninyy/static/css/main.4a7b2668.css",
-    "main.js": "/adelnarozeninyy/static/js/main.5345b9f0.js",
-    "static/js/952.307c46bf.chunk.js": "/adelnarozeninyy/static/js/952.307c46bf.chunk.js",
-    "static/js/453.ef0e7b5d.chunk.js": "/adelnarozeninyy/static/js/453.ef0e7b5d.chunk.js",
-    "static/media/cipher.png": "/adelnarozeninyy/static/media/cipher.e5c9bd7b3293123e7232.png",
-    "index.html": "/adelnarozeninyy/index.html",
-    "main.4a7b2668.css.map": "/adelnarozeninyy/static/css/main.4a7b2668.css.map",
-    "main.5345b9f0.js.map": "/adelnarozeninyy/static/js/main.5345b9f0.js.map",
-    "952.307c46bf.chunk.js.map": "/adelnarozeninyy/static/js/952.307c46bf.chunk.js.map",
-    "453.ef0e7b5d.chunk.js.map": "/adelnarozeninyy/static/js/453.ef0e7b5d.chunk.js.map"
+    "main.css": "/adelnarozeniny/static/css/main.4a7b2668.css",
+    "main.js": "/adelnarozeniny/static/js/main.c0b06118.js",
+    "static/js/952.aea10b50.chunk.js": "/adelnarozeniny/static/js/952.aea10b50.chunk.js",
+    "static/js/453.39969610.chunk.js": "/adelnarozeniny/static/js/453.39969610.chunk.js",
+    "static/media/cipher.png": "/adelnarozeniny/static/media/cipher.e5c9bd7b3293123e7232.png",
+    "index.html": "/adelnarozeniny/index.html",
+    "main.4a7b2668.css.map": "/adelnarozeniny/static/css/main.4a7b2668.css.map",
+    "main.c0b06118.js.map": "/adelnarozeniny/static/js/main.c0b06118.js.map",
+    "952.aea10b50.chunk.js.map": "/adelnarozeniny/static/js/952.aea10b50.chunk.js.map",
+    "453.39969610.chunk.js.map": "/adelnarozeniny/static/js/453.39969610.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a7b2668.css",
-    "static/js/main.5345b9f0.js"
+    "static/js/main.c0b06118.js"
   ]
 }
